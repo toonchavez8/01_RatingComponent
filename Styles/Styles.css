@@ -31,9 +31,155 @@ body {
 }
 
 .container .card {
-  background-color: #252d37;
+  background-color: rgba(37, 45, 55, 0.6);
   width: 88%;
-  height: 100px;
   border-radius: 1.5rem;
+  padding: 2.5rem;
+}
+
+.container .card .hide {
+  display: none;
+}
+
+.container .card .star {
+  background-color: rgba(124, 135, 152, 0.1);
+  width: 4rem;
+  height: 4rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .star img {
+  width: 1.4rem;
+}
+
+.container .card h1 {
+  font-size: 2.4rem;
+  color: white;
+  margin-top: 1.9rem;
+}
+
+.container .card .text {
+  color: #959eac;
+  font-size: 1.42rem;
+  line-height: 2.2rem;
+  margin-top: 1.2rem;
+}
+
+.container .card .ratingWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .card .ratingWrapper .ratingButton {
+  color: #959eac;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: rgba(124, 135, 152, 0.1);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.6rem;
+}
+
+.container .card .ratingWrapper .ratingButton div {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.container .card .ratingWrapper .ratingButton:hover {
+  background-color: #fb7413;
+  cursor: pointer;
+}
+
+.container .card .ratingWrapper .ratingButton:hover div {
+  color: white;
+}
+
+.container .card .ratingWrapper .ratingButton:active {
+  background-color: #959eac;
+}
+
+.container .card .ratingWrapper .ratingButton:active div {
+  color: white;
+}
+
+.container .card .submitButton {
+  background-color: #fb7413;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
+  padding: 1.3rem;
+  border-radius: 4rem;
+}
+
+.container .card .submitButton div {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+}
+
+.container .card .submitButton:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.container .card .submitButton:hover div {
+  color: #fb7413;
+  font-weight: 700;
+}
+
+.container .card .card-content-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .card-content-2 .text {
+  text-align: center;
 }
 /*# sourceMappingURL=Styles.css.map */
