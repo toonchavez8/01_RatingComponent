@@ -12,8 +12,8 @@ ratingBtn.forEach(ratingbutton => {
 });
 
 function onSubmit (){
-    score.textContent = rating_Score;
     card_content_1.classList.add('hide');
+    score.textContent = rating_Score;
     card_content_2.classList.remove('hide');
     
     //console.log('submit Click')
