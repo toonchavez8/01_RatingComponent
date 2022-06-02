@@ -1,0 +1,16 @@
+.container {
+    //border: 2px solid magenta; //temporary
+    width: 100vw;
+    height: 100vh;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .card {
+        background-color: $dark-blue;
+        width: 88%;//temp
+        height: 100px; //temp
+        border-radius: 1.5rem;
+    }
+}
