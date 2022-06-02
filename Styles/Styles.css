@@ -33,12 +33,9 @@ body {
 .container .card {
   background-color: rgba(37, 45, 55, 0.6);
   width: 88%;
+  max-width: 41rem;
   border-radius: 1.5rem;
   padding: 2.5rem;
-}
-
-.container .card .hide {
-  display: none;
 }
 
 .container .card .star {
@@ -62,7 +59,7 @@ body {
   width: 1.4rem;
 }
 
-.container .card h1 {
+.container .card .title {
   font-size: 2.4rem;
   color: white;
   margin-top: 1.9rem;
@@ -125,11 +122,11 @@ body {
   color: white;
 }
 
-.container .card .ratingWrapper .ratingButton:active {
+.container .card .ratingWrapper .active {
   background-color: #959eac;
 }
 
-.container .card .ratingWrapper .ratingButton:active div {
+.container .card .ratingWrapper .active div {
   color: white;
 }
 
@@ -179,7 +176,67 @@ body {
           align-items: center;
 }
 
+.container .card .card-content-2 img {
+  width: 14.5rem;
+  margin-top: 1rem;
+}
+
 .container .card .card-content-2 .text {
   text-align: center;
+  margin-bottom: 1.52rem;
+}
+
+.container .card .card-content-2 .result {
+  background-color: rgba(124, 135, 152, 0.1);
+  padding: .8rem 1.4rem;
+  border-radius: 2rem;
+  margin-top: 2.4rem;
+  margin-bottom: .6rem;
+  -webkit-transform: translateX(3%);
+          transform: translateX(3%);
+}
+
+.container .card .card-content-2 .result div {
+  color: #fb7413;
+  font-size: 1.45rem;
+}
+
+.container .card .hide {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    padding: 3rem;
+    border-radius: 3rem;
+  }
+  .container .card .star {
+    width: 5rem;
+    height: 5rem;
+  }
+  .container .card .star img {
+    width: 1.7rem;
+  }
+  .container .card .title {
+    margin-top: 3.4rem;
+    font-size: 2.77rem;
+  }
+  .container .card .text {
+    margin-top: .9rem;
+    line-height: 2.4rem;
+    font-size: 1.505rem;
+  }
+  .container .card .ratingWrapper .ratingButton {
+    width: 5.1rem;
+    height: 5.1rem;
+    font-size: 1.6rem;
+  }
+  .container .card .ratingWrapper .ratingButton div {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .container .card .submitButton {
+    margin-top: 3.2rem;
+  }
 }
 /*# sourceMappingURL=Styles.css.map */

@@ -11,13 +11,11 @@
     .card {
         background-color: $dark-blue;
         width: 88%;
+        max-width: 41rem;
         border-radius: 1.5rem;
         padding: 2.5rem;
         
-        .hide { //currently hiding
-            display: none; 
-         }
-
+        
         .star{
             background-color: $medium-grey;
             width: 4rem;
@@ -33,7 +31,7 @@
             }
         }
 
-        h1 {
+        .title {
             font-size: 2.4rem;
             color: $white;
             margin-top: 1.9rem;
@@ -78,12 +76,13 @@
                         color: $white;
                     }
                 }
-                &:active {
-                    background-color: $light-grey;
-                    
-                    div {
-                        color: $white;
-                    }
+                
+            }
+            .active {
+                background-color: $light-grey;
+                
+                div {
+                    color: $white;
                 }
             }
         }
@@ -116,14 +115,42 @@
             }
             
         }
+        // Result Card 
         .card-content-2 {
             display: flex;
             flex-direction: column;
             align-items: center;
 
+            //image scaling and margin
+            img {
+                width: 14.5rem;
+                margin-top: 1rem;
+            }
+
+            //text alignment
             .text{
                 text-align: center;
+                margin-bottom: 1.52rem;
+            }
+
+            // result section
+            .result {
+                background-color: $medium-grey;
+                padding: .8rem 1.4rem;
+                border-radius: 2rem;
+                margin-top: 2.4rem;
+                margin-bottom: .6rem;
+                transform: translateX(3%);
+                
+                 div {
+                    color: $orange;
+                    font-size: 1.45rem;
+                 }
             }
         }
+        .hide { //currently hiding
+            display: none; 
+         }
     }
+    
 }
