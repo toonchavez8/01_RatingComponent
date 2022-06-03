@@ -181,6 +181,11 @@ body {
   margin-top: 1rem;
 }
 
+.container .card .card-content-2 .lottie {
+  margin: -2rem;
+  padding: -2rem;
+}
+
 .container .card .card-content-2 .text {
   text-align: center;
   margin-bottom: 1.52rem;
